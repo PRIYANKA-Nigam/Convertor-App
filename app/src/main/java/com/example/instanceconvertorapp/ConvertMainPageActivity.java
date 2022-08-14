@@ -1,9 +1,13 @@
 package com.example.instanceconvertorapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 public class ConvertMainPageActivity extends AppCompatActivity {
@@ -33,5 +37,29 @@ public class ConvertMainPageActivity extends AppCompatActivity {
 
     public void liquid(View view) {
         startActivity(new Intent(getApplicationContext(),LiquidConvertActivity.class));
+    }
+
+    public void ScreenInfo(View view) {
+        startActivity(new Intent(getApplicationContext(),ScreenInfoActivity.class));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater=getMenuInflater();
+        menuInflater.inflate(R.menu.step_counter_pedometer,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==R.id.step) {
+            startActivity(new Intent(getApplicationContext(), StepCounterActivity.class));
+            return true;
+        }
+        if (item.getItemId()==R.id.bmi) {
+            startActivity(new Intent(getApplicationContext(), BMIActivity.class));
+            return true;
+        }
+        return true;
     }
 }

@@ -56,8 +56,8 @@ public class ScaleConvertActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int converted;
-                Integer val=Integer.parseInt(e.getText().toString());
+                double converted;
+               Double val=Double.parseDouble(e.getText().toString());
                 if (select1.equals("Centimeter")&& select2.equals("Inches")){
                     converted= (int) (val*0.3937);
                     t.setText(""+converted+" inch");

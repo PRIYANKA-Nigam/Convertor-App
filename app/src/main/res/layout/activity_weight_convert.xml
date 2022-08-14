@@ -19,7 +19,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="13dp"
             android:gravity="center"
-            android:text="Weight Measurement Convertor"
+            android:text="@string/weight_measurement_convertor"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="30sp"

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/step"
+     android:icon="@drawable/ic_baseline_directions_run_24"
+    app:showAsAction="always"
+    android:title="Step Counter" />
+    <item android:id="@+id/bmi"
+        android:icon="@drawable/ic_baseline_accessible_forward_24"
+        app:showAsAction="always"
+        android:title="Step Counter" />
+</menu>

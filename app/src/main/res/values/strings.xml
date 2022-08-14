@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Instance Convertor App</string>
+    <string name="app_name">Convertor App</string>
+    <string name="select_conversion_type"><u>Select Conversion Type</u></string>
+    <string name="liquid_volume_convertor"><u>Liquid Volume Convertor</u></string>
+    <string name="currency_convertor"><u>Currency Convertor</u></string>
+    <string name="scale_measurement_convertor"><u>Scale Measurement Convertor</u></string>
+    <string name="screen_resolution"><u>Screen Resolution</u></string>
+    <string name="temp_measurement_convertor"><u>Temperature Measurement Convertor</u></string>
+    <string name="weight_measurement_convertor"><u>Weight Measurement Convertor</u></string>
+    <string name="body_mass_index"><u>Body Mass Index</u></string>
 </resources>
