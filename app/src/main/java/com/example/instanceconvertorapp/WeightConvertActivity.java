@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class WeightConvertActivity extends AppCompatActivity {
     Button b; EditText e;
     TextView t; Spinner s1,s2;
-    String[] weight={"Gram","Ton","Quintal","Pound","Kilogram","Hectogram","Dekagram","Decigram","Centigram"};
+    String[] weight={"Gram","Ton","Quintal","Pound","Kilogram","Hectogram","Dekagram","Decigram","Centigram","Milligram","MegaGram"};
     String select1,select2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +71,7 @@ public class WeightConvertActivity extends AppCompatActivity {
                     t.setText(totalConvertedAmount+" cg");
                 }
                 if (select1.equals("Ton")&&select2.equals("Decigram")){
-                    totalConvertedAmount=amount*10000000;
+                    totalConvertedAmount=amount*9071847.4;
                     t.setText(totalConvertedAmount+" dg");
                 }
                 if (select1.equals("Ton")&&select2.equals("Dekagram")){
@@ -85,6 +85,14 @@ public class WeightConvertActivity extends AppCompatActivity {
                 if (select1.equals("Ton")&&select2.equals("Quintal")){
                     totalConvertedAmount=amount*10;
                     t.setText(totalConvertedAmount+" Quintal");
+                }
+                if (select1.equals("Ton")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*907184740;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+                if (select1.equals("Ton")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount/1.102;
+                    t.setText(totalConvertedAmount+" Mg");
                 }
                 if (select1.equals("Kilogram")&&select2.equals("Pound")){
                     totalConvertedAmount=amount*2.205;
@@ -118,6 +126,14 @@ public class WeightConvertActivity extends AppCompatActivity {
                     totalConvertedAmount=amount*0.01;
                     t.setText(totalConvertedAmount+" Quintal");
                 }
+                if (select1.equals("Kilogram")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*1000000;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+                if (select1.equals("Kilogram")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount*0.001;
+                    t.setText(totalConvertedAmount+" Mg");
+                }
                 if (select1.equals("Pound")&&select2.equals("Ton")){
                     totalConvertedAmount=amount/2000;
                     t.setText(totalConvertedAmount+" ton");
@@ -149,6 +165,14 @@ public class WeightConvertActivity extends AppCompatActivity {
                 if (select1.equals("Pound")&&select2.equals("Quintal")){
                     totalConvertedAmount=amount/220.5;
                     t.setText(totalConvertedAmount+" Quintal");
+                }
+                if (select1.equals("Pound")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*453592.37;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+                if (select1.equals("Pound")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount*0.000454;
+                    t.setText(totalConvertedAmount+" Mg");
                 }
                 if (select1.equals("Quintal")&&select2.equals("Pound")){
                     totalConvertedAmount=amount*220.5;
@@ -182,6 +206,14 @@ public class WeightConvertActivity extends AppCompatActivity {
                     totalConvertedAmount=amount/9.072;
                     t.setText(totalConvertedAmount+" ton");
                 }
+                if (select1.equals("Quintal")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*100000000;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+                if (select1.equals("Quintal")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount/10;
+                    t.setText(totalConvertedAmount+" Mg");
+                }
                 if (select1.equals("Gram")&&select2.equals("Pound")){
                     totalConvertedAmount=amount/453.6;
                     t.setText(totalConvertedAmount+" Pounds");
@@ -213,6 +245,14 @@ public class WeightConvertActivity extends AppCompatActivity {
                 if (select1.equals("Gram")&&select2.equals("Ton")){
                     totalConvertedAmount=amount/9.072;
                     t.setText(totalConvertedAmount+" ton");
+                }
+                if (select1.equals("Gram")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*1000;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+                if (select1.equals("Gram")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount/1000000;
+                    t.setText(totalConvertedAmount+" Mg");
                 }
                 if (select1.equals("Hectogram")&&select2.equals("Pound")){
                     totalConvertedAmount=amount/453.6;
@@ -246,6 +286,14 @@ public class WeightConvertActivity extends AppCompatActivity {
                     totalConvertedAmount=amount/9.072;
                     t.setText(totalConvertedAmount+" ton");
                 }
+                if (select1.equals("Hectogram")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*100000;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+                if (select1.equals("Hectogram")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount/1000000;
+                    t.setText(totalConvertedAmount+" Mg");
+                }
                 if (select1.equals("Centigram")&&select2.equals("Pound")){
                     totalConvertedAmount=amount/45359.237;
                     t.setText(totalConvertedAmount+" Pounds");
@@ -278,6 +326,14 @@ public class WeightConvertActivity extends AppCompatActivity {
                     totalConvertedAmount=amount/100000000;
                     t.setText(totalConvertedAmount+" ton");
                 }
+                if (select1.equals("Centigram")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*10;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+                if (select1.equals("Centigram")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount/100000000;
+                    t.setText(totalConvertedAmount+" Mg");
+                }
                 if (select1.equals("Decigram")&&select2.equals("Pound")){
                     totalConvertedAmount=amount/4535.9237;
                     t.setText(totalConvertedAmount+" Pounds");
@@ -307,8 +363,16 @@ public class WeightConvertActivity extends AppCompatActivity {
                     t.setText(totalConvertedAmount+" hg");
                 }
                 if (select1.equals("Decigram")&&select2.equals("Ton")){
-                    totalConvertedAmount=amount/10000000;
+                    totalConvertedAmount=amount/9071847.4;
                     t.setText(totalConvertedAmount+" ton");
+                }
+                if (select1.equals("Decigram")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*100;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+                if (select1.equals("Decigram")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount/10000000;
+                    t.setText(totalConvertedAmount+" Mg");
                 }
                 if (select1.equals("Dekagram")&&select2.equals("Pound")){
                     totalConvertedAmount=amount/45.3592;
@@ -342,6 +406,95 @@ public class WeightConvertActivity extends AppCompatActivity {
                     totalConvertedAmount=amount/100000;
                     t.setText(totalConvertedAmount+" ton");
                 }
+                if (select1.equals("Dekagram")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*10000;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+                if (select1.equals("Dekagram")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount/100000;
+                    t.setText(totalConvertedAmount+" Mg");
+                }
+                if (select1.equals("Milligram")&&select2.equals("Pound")){
+                    totalConvertedAmount=amount/(1000000*2.205);
+                    t.setText(totalConvertedAmount+" Pounds");
+                }
+                if (select1.equals("Milligram")&&select2.equals("Kilogram")){
+                    totalConvertedAmount=amount/1000000;
+                    t.setText(totalConvertedAmount+" kg");
+                }
+                if (select1.equals("Milligram")&&select2.equals("Quintal")){
+                    totalConvertedAmount=amount/100000000;
+                    t.setText(totalConvertedAmount+" Quintal");
+                }
+                if (select1.equals("Milligram")&&select2.equals("Centigram")){
+                    totalConvertedAmount=amount/10;
+                    t.setText(totalConvertedAmount+" cg");
+                }
+                if (select1.equals("Milligram")&&select2.equals("Decigram")){
+                    totalConvertedAmount=amount/100;
+                    t.setText(totalConvertedAmount+" dg");
+                }
+                if (select1.equals("Milligram")&&select2.equals("Hectogram")){
+                    totalConvertedAmount=amount/100000;
+                    t.setText(totalConvertedAmount+" hg");
+                }
+                if (select1.equals("Milligram")&&select2.equals("Gram")){
+                    totalConvertedAmount=amount/1000;
+                    t.setText(totalConvertedAmount+" gm");
+                }
+                if (select1.equals("Milligram")&&select2.equals("Ton")){
+                    totalConvertedAmount=amount/1000000000;
+                    t.setText(totalConvertedAmount+" ton");
+                }
+                if (select1.equals("Milligram")&&select2.equals("Dekagram")){
+                    totalConvertedAmount=amount/10000;
+                    t.setText(totalConvertedAmount+" dag");
+                }
+                if (select1.equals("Milligram")&&select2.equals("MegaGram")){
+                    totalConvertedAmount=amount/1000000000;
+                    t.setText(totalConvertedAmount+" Mg");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Pound")){
+                    totalConvertedAmount=amount*2204.623;
+                    t.setText(totalConvertedAmount+" Pounds");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Kilogram")){
+                    totalConvertedAmount=amount*1000;
+                    t.setText(totalConvertedAmount+" kg");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Quintal")){
+                    totalConvertedAmount=amount*10;
+                    t.setText(totalConvertedAmount+" Quintal");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Centigram")){
+                    totalConvertedAmount=amount*100000000;
+                    t.setText(totalConvertedAmount+" cg");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Decigram")){
+                    totalConvertedAmount=amount*10000000;
+                    t.setText(totalConvertedAmount+" dg");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Hectogram")){
+                    totalConvertedAmount=amount*10000;
+                    t.setText(totalConvertedAmount+" hg");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Gram")){
+                    totalConvertedAmount=amount*1000000;
+                    t.setText(totalConvertedAmount+" gm");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Ton")){
+                    totalConvertedAmount=amount*1.102;
+                    t.setText(totalConvertedAmount+" ton");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Dekagram")){
+                    totalConvertedAmount=amount*10000;
+                    t.setText(totalConvertedAmount+" dag");
+                }
+                if (select1.equals("MegaGram")&&select2.equals("Milligram")){
+                    totalConvertedAmount=amount*1000000000;
+                    t.setText(totalConvertedAmount+" mg");
+                }
+
             }
         });
     }

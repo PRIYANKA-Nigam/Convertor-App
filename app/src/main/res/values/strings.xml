@@ -8,4 +8,5 @@
     <string name="temp_measurement_convertor"><u>Temperature Measurement Convertor</u></string>
     <string name="weight_measurement_convertor"><u>Weight Measurement Convertor</u></string>
     <string name="body_mass_index"><u>Body Mass Index</u></string>
+    <string name="temperature_measurement_conversion">Temperature Measurement Conversion</string>
 </resources>

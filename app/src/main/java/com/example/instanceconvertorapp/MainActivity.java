@@ -69,7 +69,7 @@ Button b; EditText e;
                  t.setText(" "+total);
              }
                 if (clickedCountryName.equals("USA") && clickedCountryNameTo.equals("India")){
-                    totalConvertedAmount=amount*79.70;
+                    totalConvertedAmount=amount*82.36;
                     String total=String.format("%.2f",totalConvertedAmount);
                     t.setText(" "+total+" ruppee");
                 }
@@ -114,7 +114,7 @@ Button b; EditText e;
                     t.setText(" "+total+" Dirham");
                 }
                 if (clickedCountryName.equals("India") && clickedCountryNameTo.equals("USA")){
-                    totalConvertedAmount=amount*0.013;
+                    totalConvertedAmount=amount*0.012;
                     String total=String.format("%.2f",totalConvertedAmount);
                     t.setText(" "+total+" Dollar");
                 }
@@ -134,7 +134,7 @@ Button b; EditText e;
                     t.setText(" "+total+" Dollar");
                 }
                 if (clickedCountryName.equals("India") && clickedCountryNameTo.equals("UK")){
-                    totalConvertedAmount=amount*0.010;
+                    totalConvertedAmount=amount*0.011;
                     String total=String.format("%.2f",totalConvertedAmount);
                     t.setText(" "+total+" Pound");
                 }
@@ -189,7 +189,7 @@ Button b; EditText e;
                     t.setText(" "+total+" Rupee");
                 }
                 if (clickedCountryName.equals("UK") && clickedCountryNameTo.equals("India")){
-                    totalConvertedAmount=amount*96.75;
+                    totalConvertedAmount=amount*96.23;
                     String total=String.format("%.2f",totalConvertedAmount);
                     t.setText(" "+total+" Rupee");
                 }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "951797577620",
+    "project_id": "instance-convertor-app",
+    "storage_bucket": "instance-convertor-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951797577620:android:42649c47ec0d12b55b8181",
+        "android_client_info": {
+          "package_name": "com.example.instanceconvertorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951797577620-7o8nbf46druotsbeut0m2mq71kif1is4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEgrHT_gcCltupEY11a3BTZgkq_nEzXYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951797577620-7o8nbf46druotsbeut0m2mq71kif1is4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

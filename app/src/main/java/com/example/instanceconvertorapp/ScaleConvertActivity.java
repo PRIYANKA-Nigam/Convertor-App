@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class ScaleConvertActivity extends AppCompatActivity {
     Button b; EditText e;
     TextView t; Spinner s1,s2;
-    String[] scale={"Centimeter","Inches","Millimeter","Foot","Yard","Kilometer","Miles"};
+    String[] scale={"Centimeter","Inches","Millimeter","Foot","Yard","Kilometer","Miles","Meter"};
     String select1,select2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,9 +78,13 @@ public class ScaleConvertActivity extends AppCompatActivity {
                     converted= (int) (val/100000);
                     t.setText(""+converted+" km");
                 }
-                if (select1.equals("Centimeter")&& select2.equals("miles")){
+                if (select1.equals("Centimeter")&& select2.equals("Miles")){
                     converted= (int) (val/160900);
                     t.setText(""+converted+" miles");
+                }
+                if (select1.equals("Centimeter")&& select2.equals("Meter")){
+                    converted= (int) (val/100);
+                    t.setText(""+converted+" meters");
                 }
                 if (select1.equals("Millimeter")&& select2.equals("Inches")){
                     converted= (int) (val*0.03937);
@@ -106,6 +110,10 @@ public class ScaleConvertActivity extends AppCompatActivity {
                     converted= (int) (val*6.214/10000000);
                     t.setText(""+converted+" miles");
                 }
+                if (select1.equals("Millimeter")&& select2.equals("Meter")){
+                    converted= (int) (val*0.001);
+                    t.setText(""+converted+" meter");
+                }
                 if (select1.equals("Inches")&& select2.equals("Foot")){
                     converted= (int) (val/12);
                     t.setText(""+converted+" Foot");
@@ -129,6 +137,10 @@ public class ScaleConvertActivity extends AppCompatActivity {
                 if (select1.equals("Inches")&& select2.equals("Miles")){
                     converted= (int) (val*1.578/100000);
                     t.setText(""+converted+" miles");
+                }
+                if (select1.equals("Inches")&& select2.equals("Meter")){
+                    converted= (int) (val*0.0254);
+                    t.setText(""+converted+" meter");
                 }
                 if (select1.equals("Foot")&& select2.equals("Inches")){
                     converted= (int) (val*12);
@@ -154,6 +166,10 @@ public class ScaleConvertActivity extends AppCompatActivity {
                     converted= (int) (val*0.000189);
                     t.setText(""+converted+" miles");
                 }
+                if (select1.equals("Foot")&& select2.equals("Meter")){
+                    converted= (int) (val*0.305);
+                    t.setText(""+converted+" meter");
+                }
                 if (select1.equals("Yard")&& select2.equals("Inches")){
                     converted= (int) (val*36);
                     t.setText(""+converted+" inch");
@@ -177,6 +193,10 @@ public class ScaleConvertActivity extends AppCompatActivity {
                 if (select1.equals("Yard")&& select2.equals("Miles")){
                     converted= (int) (val*0.000568);
                     t.setText(""+converted+" miles");
+                }
+                if (select1.equals("Yard")&& select2.equals("Meter")){
+                    converted= (int) (val*0.914);
+                    t.setText(""+converted+" meter");
                 }
                 if (select1.equals("Kilometer")&& select2.equals("Inches")){
                     converted= (int) (val*39370.079);
@@ -202,6 +222,10 @@ public class ScaleConvertActivity extends AppCompatActivity {
                     converted= (int) (val/1.609);
                     t.setText(""+converted+" miles");
                 }
+                if (select1.equals("Kilometer")&& select2.equals("Meter")){
+                    converted= (int) (val*1000);
+                    t.setText(""+converted+" meter");
+                }
                 if (select1.equals("Miles")&& select2.equals("Inches")){
                     converted= (int) (val*63360);
                     t.setText(""+converted+" inch");
@@ -225,6 +249,38 @@ public class ScaleConvertActivity extends AppCompatActivity {
                 if (select1.equals("Miles")&& select2.equals("Kilometer")){
                     converted= (int) (val*1.609);
                     t.setText(""+converted+" km");
+                }
+                if (select1.equals("Miles")&& select2.equals("Meter")){
+                    converted= (int) (val*1609.344);
+                    t.setText(""+converted+" meters");
+                }
+                if (select1.equals("Meter")&& select2.equals("Inches")){
+                    converted= (int) (val*39.37);
+                    t.setText(""+converted+" inch");
+                }
+                if (select1.equals("Meter")&& select2.equals("Millimeter")){
+                    converted= (int) (val*1000);
+                    t.setText(""+converted+" mm");
+                }
+                if (select1.equals("Meter")&& select2.equals("Centimeter")){
+                    converted= (int) (val*100);
+                    t.setText(""+converted+" cm");
+                }
+                if (select1.equals("Meter")&& select2.equals("Foot")){
+                    converted= (int) (val*3.281);
+                    t.setText(""+converted+" feet");
+                }
+                if (select1.equals("Meter")&& select2.equals("Yard")){
+                    converted= (int) (val*1.094);
+                    t.setText(""+converted+" yard");
+                }
+                if (select1.equals("Meter")&& select2.equals("Kilometer")){
+                    converted= (int) (val/1000);
+                    t.setText(""+converted+" km");
+                }
+                if (select1.equals("Meter")&& select2.equals("Miles")){
+                    converted= (int) (val/1609);
+                    t.setText(""+converted+" miles");
                 }
             }
         });

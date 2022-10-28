@@ -20,7 +20,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="13dp"
             android:gravity="center"
-            android:text="@string/scale_measurement_convertor"
+            android:text="@string/temperature_measurement_conversion"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="30sp"
